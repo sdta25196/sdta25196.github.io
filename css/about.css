@@ -1,0 +1,209 @@
+body{
+  background: #f6f6f6;
+}
+/*========
+ head2样式
+ ==========*/
+.head2{
+  margin-top: 3rem;
+  position: relative;
+}
+.head2 img{
+  margin: 0px;
+}
+.head2 .context {
+  position: absolute;
+  color: #666666;
+  top: 19rem;
+  left: 10rem;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .head2 .context {
+    position: absolute;
+    color: #666666;
+    top: 7rem;
+    left: 3rem;
+    width: 54%;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .head2 .context h1{
+    margin-bottom: 0rem !important;
+  }
+}
+.head2 .context span{
+  color: #45bdce;
+  display: inherit;
+}
+/*========
+ about_body样式
+ ==========*/
+.about_body{
+  margin-left: 10rem;
+}
+.about_body .body_top{
+  width: 50%;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .about_body{
+    margin-left: 3rem;
+  }
+  .about_body .body_top{
+    width: 70%;
+  }
+}
+.about_body div{
+  margin-bottom: 3rem;
+}
+/* 企业文化样式*/
+.wenhua{
+  padding-right: 10rem;
+  position: relative;
+}
+.wenhua .choose{
+  height: 5rem;
+  background: #333;
+}
+.wenhua .choose_ul{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  height: 100%;
+}
+.wenhua .choose_ul li{
+  color: rgba(255,255,255,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.wenhua .choose_ul li:hover{
+  background: #45BDCE;
+  color: #000000;
+}
+.active{
+  background: #45BDCE;
+  color: #000000 !important;
+}
+.wenhua .context{
+  position: absolute;
+  top: 15rem;
+  left: 8rem;
+  width: 50%;
+  color: #000000 !important;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .wenhua .context{
+    top: 5rem;
+    left: 5rem;
+  }
+}
+.wenhua .context h1 {
+  font-weight: 500;
+}
+
+/*荣誉资质样式*/
+.rongyu{
+  display: flex;
+  flex-direction: row;
+  padding-right: 10rem;
+}
+.rongyu div{
+  padding-right: 20%;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .rongyu img{
+    display: none;
+  }
+}
+/*========
+ 科研产品样式
+ ==========*/
+.product_body{
+  margin: 2rem 10rem;
+  border-bottom: 1px solid #d7d5d4;
+}
+.product_body .head2{
+  margin-bottom: 2rem;
+}
+.product_body .wenhua{
+  padding-right: 5rem;
+}
+.product_body .wenhua .context{
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  width: 30%;
+  color: #000000 !important;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .product_body{
+    margin: 2rem 5rem;
+  }
+  .product_body .wenhua{
+    padding-right: 0rem;
+  }
+  .product_body .wenhua .context{
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    width: 45%;
+    color: #000000 !important;
+  }
+}
+/*========
+ 科研产品样式
+ ==========*/
+.product{
+ padding: 0rem 10rem;
+  display: flex;
+}
+
+.product .img{
+  position: relative;
+  margin-right: 1rem;
+}
+.product .img img{
+  display: block;
+}
+.img .bg{
+  cursor: pointer;
+}
+.img .bg h2{
+  font-weight: 500;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+}
+.white_h2{
+  color: #FFFFFF;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .product{
+    padding: 0rem 5rem;
+  }
+}
+.con_product{
+  padding: 2rem 10rem;
+  width: 50%;
+}
+.con_product .title{
+  color: #45BDCE;
+  margin-bottom: 3rem;
+  display: block;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .con_product{
+    padding: 0rem 5rem;
+    width: 70%;
+  }
+}

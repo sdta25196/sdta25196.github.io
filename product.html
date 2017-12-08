@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <!-- jQuery -->
+  <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+  <!-- 重置css样式-->
+  <link type="text/css" rel="stylesheet"  href="./css/normalize.css">
+  <!-- 基本样式与工具样式-->
+  <link type="text/css" rel="stylesheet"  href="css/index.css">
+  <!-- 当前页面用CSS于JS-->
+  <link type="text/css" rel="stylesheet" href="css/about.css"/>
+  <script type="text/javascript">
+    <!-- 点击切换企业介绍 -->
+    $(function () {
+      $(".choose_ul").click(function (event) {
+        var eml = event.target;
+        if($(eml).attr("class").indexOf("li")>=0){
+          var num= $(eml).attr("class").substr(-1);
+          if(!(num=="e")){
+            $(".context"+num).addClass("show").siblings().removeClass("show").addClass("hide");
+          }
+          $(eml).addClass("active").siblings().removeClass("active");
+
+        }
+      })
+    })
+    function bgClick(ev) {
+      if($(ev).children("img").hasClass("white")){
+        $(".bg").children("img").each(function () {
+          if(!$(this).hasClass("white")){
+            $(this).attr("src","./imgs/pro_b.png").addClass("white");
+          }
+        })
+        $(".bg").children("h2").each(function () {
+          $(this).removeClass("white_h2")
+        })
+        $(ev).children("img").attr("src","./imgs/pro_a.png").removeClass("white");
+      }
+      $(ev).children("h2").addClass("white_h2");
+      $("."+ev.id).removeClass("hide").addClass("show").siblings().removeClass("show").addClass("hide");
+    }
+  </script>
+  <title>科研产品</title>
+</head>
+<body>
+    <!-- NAV-->
+    <div class="nav">
+      <img src="./imgs/nav.jpg" alt="" />
+    </div>
+    <!-- 头部图片1-->
+    <div class="nav">
+      <img src="./imgs/about_head.jpg" alt="" width="100%" />
+    </div>
+    <!-- body-->
+    <div class="product_body">
+      <!-- 头部图片2-->
+      <div class="nav head2 ">
+        <img src="./imgs/product.jpg" alt="" />
+      </div>
+      <!--功能-->
+      <div class="wenhua">
+        <img src="./imgs/wenhua.jpg" alt="" class="blockImg center-block" width="100%"/>
+        <div class="choose">
+          <ul class="choose_ul">
+            <li class="li1 active">功能概述</li>
+            <li class="li2">售后服务</li>
+          </ul>
+        </div>
+        <div class="context">
+          <div class="context1 show">
+            <h1>功能概述</h1>
+            <span>京神康云科技有限公司 是以智能化医疗数据采集、分析、管理与康复服务为一体的高科技企业。拥有国内领先的科研临床数据融合系统，
+           帮助医院相关科室建立结构化病历数据库，提高统计、随访、科研、等各环节的效率。建立临床科研与患者服务的数字化生态环境</span>
+          </div>
+          <div class="context2 hide">
+            <h1>售后服务</h1>
+            <span>京神康云科技有限公司 是以智能化医疗数据采集、分析、管理与康复服务为一体的高科技企业。拥有国内领先的科研临床数据融合系统，
+           帮助医院相关科室建立结构化病历数据库，提高统计、随访、科研、等各环节的效率。建立临床科研与患者服务的数字化生态环境</span>
+          </div>
+        </div>
+      </div>
+      <!-- 图片-->
+      <div class="nav head2">
+        <img src="./imgs/product_a.jpg" alt="" />
+      </div>
+    </div>
+    <!-- 软件介绍-->
+    <div class="product">
+      <div class="img">
+        <img src="./imgs/product_b.jpg" alt="" class="blockImg"/>
+        <div class="bg" onclick="bgClick(this)" id="pc">
+          <img src="./imgs/pro_a.png" alt="" class="blockImg"/>
+          <h2 class="white_h2">PC端软件介绍</h2>
+        </div>
+      </div>
+      <div class="img">
+        <img src="./imgs/product_b.jpg" alt="" class="blockImg" />
+        <div class="bg" onclick="bgClick(this)" id="mo">
+          <img src="./imgs/pro_b.png" alt=""  class="white blockImg"/>
+          <h2>移动端软件介绍</h2>
+        </div>
+      </div>
+    </div>
+    <div class="con_product">
+      <div class="pc show">
+        <h1>PC端软件介绍</h1>
+        <span class="title">北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+        北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康。
+        </span>
+        <img src="./imgs/pc_img.png" alt=""/>
+        <div class="pc_con">
+          <h3>擅长领域</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>市场规模</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>共赢合作</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>团队体系</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+        </div>
+      </div>
+      <div class="mo hide">
+        <h1>移动端软件介绍</h1>
+        <span class="title">北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+        北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康。
+        </span>
+        <img src="./imgs/pc_img.png" alt=""/>
+        <div class="pc_con">
+          <h3>擅长领域</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>市场规模</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>共赢合作</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+          <h3>团队体系</h3>
+          <span>北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体
+          北京神康云技术有限公司是以智能化医疗采集数据、分析、管理与康复为一体北京神康云技术有限公司是以智能
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- foot-->
+    <iframe id="iframe_foot" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" src="foot.html">
+      您使用的浏览器版本太低，请升级或者更换浏览器。
+    </iframe>
+</body>
+</html>

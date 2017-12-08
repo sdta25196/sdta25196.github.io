@@ -1,0 +1,236 @@
+/*========
+  body样式
+ ==========*/
+/*联系方式*/
+.con_body .phone{
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  margin: 2rem 0rem;
+}
+.con_body .phone span{
+  font-size: 1rem;
+  margin: 0 5rem;
+  margin-left: 2rem;
+}
+/*负责人*/
+.con_body .orderman{
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 10rem;
+  position: relative;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .con_body .phone{
+    padding-left: 5rem;
+  }
+  .con_body .orderman{
+    padding: 0rem 5rem;
+  }
+}
+.con_body .orderman>span{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.orderman .choose{
+  height: 5rem;
+  background: #333;
+}
+.orderman .choose_ul{
+  display: flex;
+  flex-direction:row;
+  /*justify-content:flex-end;*/
+  height: 100%;
+}
+.orderman .choose_ul li{
+  color: rgba(255,255,255,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.orderman .choose_ul li:hover{
+  background: #45BDCE;
+  color: #000000;
+}
+.active{
+  background: #45BDCE;
+  color: #000000 !important;
+}
+.orderman .context{
+  position: absolute;
+  bottom: 0rem;
+  right: 10rem;
+  width: 20%;
+  background: #45BDCE;
+  height: 40%;
+  color: #FFFFFF;
+  padding-left: 5%;
+  padding-top: 2rem;
+}
+.orderman .context h1{
+  margin-bottom: 2rem;
+}
+.orderman .context span{
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .orderman .context{
+    right: 5rem;
+  }
+  .orderman .context span,
+  .orderman .context h1{
+    margin-bottom: 1rem;
+  }
+}
+/*定位的圆圈*/
+.quan1 .quan .center{
+  border: 2px solid #45BDCF;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background: #45BDCF;
+  animation:a 2s infinite;
+  -webkit-animation:a 2s infinite;
+  -moz-animation:a 2s infinite;
+}
+@keyframes a{
+  from {transform: scale(1,1);}
+  to {transform: scale(.7,.7);}
+}
+ .quan1 .quan{
+  border: 2px solid #45BDCF;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .quan1{
+  border: 2px solid #45BDCF;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  animation:animation 2s infinite;
+  -webkit-animation:animation 2s infinite;
+  -moz-animation:animation 2s infinite;
+}
+@keyframes animation
+{
+  from {transform: scale(1,1);}
+  to {transform: scale(1.5,1.5);}
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .quan1{
+    top: 50%;
+    left: 41%;
+  }
+}
+/*定位结束*/
+
+/*加入我们*/
+.con_body .join{
+  display: flex;
+  padding-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+.join_con{
+  padding-left: 3rem;
+  position: relative;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .join_con{
+    padding-left: 1rem;
+  }
+}
+.join_con h1{
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-top: 0rem !important;
+  margin-bottom: 2rem !important;
+  line-height: 2rem;
+}
+.join_con span{
+  display: block;
+  color: inherit;
+}
+.join_con table{
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+}
+.join_con table tr td{
+  height: 2rem;
+}
+.join_con table td:nth-child(even){
+  padding-right: 1rem;
+}
+.join_con table td:nth-child(odd){
+  color: red;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .con_body .join{
+    margin-left: 5rem;
+    padding-right: 5rem;
+  }
+  .join_con table td:nth-child(odd){
+    width: 16%;
+  }
+}
+/*招聘信息样式*/
+.ajob{
+  padding: 1rem 10rem;
+  width: 50%;
+}
+.ajob .job_head{
+  background: red;
+  color: #FFFFFF;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+}
+.ajob .job_body{
+  display: flex;
+  justify-content: start;
+}
+.ajob .job_body span{
+  display: block;
+}
+.job_body_left{
+  border-right:1px solid #999999 ;
+  margin-right:1rem !important;
+}
+.job_body_left,
+.job_body_right{
+  width: 40%;
+  margin: 1.5rem 0rem;
+  padding-right: 1rem;
+}
+/*手机界面*/
+@media only screen and (max-width: 1000px) {
+  .ajob{
+    padding: 1rem 5rem;
+    width: 70%;
+  }
+}
