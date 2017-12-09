@@ -15,11 +15,12 @@
   <link type="text/css" rel="stylesheet"  href="css/index.css">
   <title>神康云</title>
   <script type="text/javascript">
-    layui.use('element', function(){
+    layui.use(['element','layer'], function(){
       var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+      var layer = layui.layer;
        element.on('nav(filter)', function(data){//监听导航栏切换
          if($(data).attr("id")=="birthday"){
-           layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,btn2: function () {
+/*           layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,btn2: function () {
              $("#birthday").click();
            }
            }, function(pass, index){
@@ -29,9 +30,9 @@
              }else if(pass=="index"){
                layer.close(index);
              }else{
-               layer.msg('密码错误');
+               top.layer.msg('密码错误');
              }
-           });
+           });*/
          }else{
            $("#iframe").attr("src", $(data).attr("id")+".html")
          }
@@ -41,17 +42,17 @@
         $("#iframe").attr("src","main.html");
         $("#body").css("height",$(document).height()-$("#head").height());
         $("#birthday").click(function () {
-          layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,btn2: function () {
+          layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,anim: 1,btn2: function () {
             $("#birthday").click();
             }
           }, function(pass, index){
             if(pass=="birthday"){
               window.location.href='birthday.html';
-              layer.close(index);
             }else if(pass=="index"){
               layer.close(index);
             }else{
-              layer.msg('密码错误');
+              $("#birthday").click();
+              top.layer.msg('密码错误');
             }
           });
         });
@@ -111,6 +112,10 @@
     <style type="text/css">
       body{
         overflow: hidden;
+      }
+      .layui-layer-shade{
+        background: url("./imgs/05.jpg") no-repeat left top;
+        background-size:100% 100%;
       }
     </style>
 </body>
