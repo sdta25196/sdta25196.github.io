@@ -2,7 +2,6 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
   <!-- jQuery -->
   <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
   <!-- 重置css样式-->
@@ -10,6 +9,8 @@
   <!-- layui-->
   <script type="text/javascript" src="./js/layui-master/src/layui.js"></script>
   <link  type="text/css" href="./js/layui-master/src/css/layui.css" rel="stylesheet" >
+  <script src="./js/layer/layer.js" type="text/javascript"></script>
+  <script src="./js/layer/layer.config.js" type="text/javascript"></script>
   <!-- 基本样式与工具样式-->
   <link type="text/css" rel="stylesheet"  href="css/index.css">
   <title>神康云</title>
@@ -17,7 +18,18 @@
     layui.use('element', function(){
       var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
        element.on('nav(filter)', function(data){//监听导航栏切换
-         $("#iframe").attr("src", $(data).attr("id")+".html")
+         if($(data).attr("id")=="birthday"){
+           layer.prompt({title: '输入任何口令，并确认', formType: 1}, function(pass, index){
+               if(pass=="birthday"){
+                 window.location.href='birthday.html';
+                 layer.close(index);
+               }else{
+                 layer.msg('密码错误');
+               }
+           });
+         }else{
+           $("#iframe").attr("src", $(data).attr("id")+".html")
+         }
       });
     });
     $(function(){
@@ -63,6 +75,11 @@
                   联系我们
                 </a>
             </li>
+            <li class="layui-nav-item " id="birthday">
+              <a href="javascript:void(0);" >
+                生日快乐
+              </a>
+          </li>
         </ul>
     </div>
     <div id="body">
