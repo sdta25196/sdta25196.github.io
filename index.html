@@ -19,13 +19,18 @@
       var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
        element.on('nav(filter)', function(data){//监听导航栏切换
          if($(data).attr("id")=="birthday"){
-           layer.prompt({title: '输入任何口令，并确认', formType: 1}, function(pass, index){
-               if(pass=="birthday"){
-                 window.location.href='birthday.html';
-                 layer.close(index);
-               }else{
-                 layer.msg('密码错误');
-               }
+           layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,btn2: function () {
+             $("#birthday").click();
+           }
+           }, function(pass, index){
+             if(pass=="birthday"){
+               window.location.href='birthday.html';
+               layer.close(index);
+             }else if(pass=="index"){
+               layer.close(index);
+             }else{
+               layer.msg('密码错误');
+             }
            });
          }else{
            $("#iframe").attr("src", $(data).attr("id")+".html")
@@ -35,6 +40,22 @@
     $(function(){
         $("#iframe").attr("src","main.html");
         $("#body").css("height",$(document).height()-$("#head").height());
+        $("#birthday").click(function () {
+          layer.prompt({title: '输入口令，并确认', formType: 1,shade: [1, '#393D49'],closeBtn: 0,btn2: function () {
+            $("#birthday").click();
+            }
+          }, function(pass, index){
+            if(pass=="birthday"){
+              window.location.href='birthday.html';
+              layer.close(index);
+            }else if(pass=="index"){
+              layer.close(index);
+            }else{
+              layer.msg('密码错误');
+            }
+          });
+        });
+      $("#birthday").click();
     })
   </script>
 </head>
