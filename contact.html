@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <!-- jQuery -->
+  <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+  <!-- 重置css样式-->
+  <link type="text/css" rel="stylesheet"  href="./css/normalize.css">
+  <!-- 基本样式与工具样式-->
+  <link type="text/css" rel="stylesheet"  href="css/index.css">
+  <!-- 当前页面用CSS于JS-->
+  <link type="text/css" rel="stylesheet" href="css/contact.css"/>
+  <script type="text/javascript">
+    <!-- 点击切换地区 -->
+    $(function () {
+      $(".choose_ul").click(function (event) {
+        var eml = event.target;
+        if($(eml).attr("class").indexOf("li")>=0){
+          var num= $(eml).attr("class").substr(-1);
+          if(!(num=="e")){
+            $(".context"+num).addClass("show").siblings().removeClass("show").addClass("hide");
+          }
+          if(num==1){
+            if(document.body.clientWidth>1000) {
+              $(".quan1").css({"top": "54%", "left": "43%"})
+            }else{
+              $(".quan1").css({"top": "58%", "left": "43%"})
+            }
+          }else if(num==2){
+            if(document.body.clientWidth>1000) {
+              $(".quan1").css({ "top":"45%","left":"42%"})
+            }else{
+              $(".quan1").css({"top": "50%", "left": "41%"})
+            }
+          }else if(num==3){
+            if(document.body.clientWidth>1000) {
+              $(".quan1").css({ "top":"65%","left":"46%"})
+            }else{
+              $(".quan1").css({"top": "67%", "left": "45%"})
+            }
+          }else if(num==4){
+            if(document.body.clientWidth>1000) {
+              $(".quan1").css({ "top":"75%","left":"45%"})
+            }else{
+              $(".quan1").css({"top": "77%", "left": "44%"})
+            }
+          }
+          $(eml).addClass("active").siblings().removeClass("active");
+
+        }
+      })
+    })
+  </script>
+  <title>联系我们</title>
+</head>
+<body>
+    <!-- NAV-->
+    <div class="nav">
+      <img src="./imgs/nav.jpg" alt="" />
+    </div>
+    <!-- 头部图片-->
+    <div class="nav">
+      <img src="./imgs/about_head.jpg" alt="" width="100%" />
+    </div>
+    <!-- body-->
+    <div class="con_body">
+      <!-- 联系方式-->
+      <div class="phone">
+        <img src="./imgs/con_email.png" alt=""/>
+        <span>wangzhen@shenkangyun.com</span>
+        <img src="./imgs/con_phone.png" alt=""/>
+        <span>400-116-8899&emsp;010-62330598</span>
+        <img src="./imgs/con_address.png" alt=""/>
+        <span>北京市海淀区清华东路16号3号楼(中关村新能源与安全科技园)8层</span>
+      </div>
+      <!-- 负责人-->
+      <div class="orderman">
+        <h1>神康云愿与您一道，开拓医疗数据解决方案新时代</h1>
+        <span >我们已经准备好，那么您呢？</span>
+        <div class="choose">
+          <ul class="choose_ul">
+            <li class="li1">山东地区</li>
+            <li class="li2 active">华北地区</li>
+            <li class="li3">苏皖地区</li>
+            <li class="li4">东南地区</li>
+          </ul>
+        </div>
+          <div class="quan1">
+            <div class="quan">
+              <div class="center"></div>
+            </div>
+          </div>
+          <img src="./imgs/map.jpg" alt="" class="blockImg "/>
+        <div class="context">
+          <div class="context1 hide">
+            <h1>山东地区</h1>
+            <span>山东|河北|河南|山西</span>
+            <span>山东省泰安市泰山区明堂路60号</span>
+            <span>地区负责人:王震</span>
+            <span>联系电话：18854889207</span>
+          </div>
+          <div class="context2 show">
+            <h1>华北地区</h1>
+            <span>山东|河北|河南|山西</span>
+            <span>山东省泰安市泰山区明堂路60号</span>
+            <span>地区负责人:王震</span>
+            <span>联系电话：18854889207</span>
+          </div>
+          <div class="context3 hide">
+            <h1>苏皖地区</h1>
+            <span>山东|河北|河南|山西</span>
+            <span>山东省泰安市泰山区明堂路60号</span>
+            <span>地区负责人:王震</span>
+            <span>联系电话：18854889207</span>
+          </div>
+          <div class="context4 hide">
+            <h1>东南地区</h1>
+            <span>山东|河北|河南|山西</span>
+            <span>山东省泰安市泰山区明堂路60号</span>
+            <span>地区负责人:王震</span>
+            <span>联系电话：18854889207</span>
+          </div>
+        </div>
+      </div>
+      <!-- 加入我们-->
+      <div class="join">
+        <img src="./imgs/join.jpg" alt=""/>
+        <div class="join_con">
+          <h1>加入我们 共创辉煌</h1>
+          <span>神康云拥有广阔的发展前景和良好地企业氛围</span>
+          <span>
+            为各种优秀人才提供肥沃的土壤，我们邀请您一起走上不断创业的征途，共享发展成果。
+          </span>
+          <table>
+            <tr>
+              <td>咨询电话：</td>
+              <td>0533335865</td>
+              <td>联系QQ：</td>
+              <td>175199219</td>
+            </tr>
+            <tr>
+              <td>应聘邮箱：</td>
+              <td>wangzhen@shenkangyun.com</td>
+              <td>企业地址：</td>
+              <td>山东省泰安市泰山区明堂路60号</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="ajob">
+        <div class="job_head">
+          <span>
+             诚聘ANDROID系统开发工程师（2人）
+          </span>
+        </div>
+        <div class="job_body">
+          <div class="job_body_left">
+            <span>岗位职责：</span>
+            <span>1、负责安卓系统开发环境搭建、移植与优化</span>
+            <span>2、负责安卓系统集成与发布，并编写相关技术文档</span>
+            <span>3、负责相符汇总特殊需要的接口模块的开发</span>
+            <span>4、解决测试中发现的问题</span>
+            <span>5、负责与各模块厂商沟通</span>
+          </div>
+          <div class="job_body_right">
+            <span>岗位要求：</span>
+            <span>1、负责安卓系统开发环境搭建、移植与优化</span>
+            <span>2、负责安卓系统集成与发布，并编写相关技术文档</span>
+            <span>3、负责相符汇总特殊需要的接口模块的开发</span>
+            <span>4、解决测试中发现的问题</span>
+            <span>5、负责与各模块厂商沟通</span>
+          </div>
+        </div>
+        <div class="job_head">
+          <span>
+             诚聘ANDROID系统开发工程师（2人）
+          </span>
+        </div>
+        <div class="job_body">
+          <div class="job_body_left">
+            <span>岗位职责：</span>
+            <span>1、负责安卓系统开发环境搭建、移植与优化</span>
+            <span>2、负责安卓系统集成与发布，并编写相关技术文档</span>
+            <span>3、负责相符汇总特殊需要的接口模块的开发</span>
+            <span>4、解决测试中发现的问题</span>
+          </div>
+          <div class="job_body_right">
+            <span>岗位要求：</span>
+            <span>1、负责安卓系统开发环境搭建、移植与优化</span>
+            <span>2、负责安卓系统集成与发布，并编写相关技术文档</span>
+            <span>3、负责相符汇总特殊需要的接口模块的开发</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- foot-->
+    <iframe id="iframe_foot" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" src="foot.html">
+      您使用的浏览器版本太低，请升级或者更换浏览器。
+    </iframe>
+</body>
+</html>
