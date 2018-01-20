@@ -1,6 +1,0 @@
-html #layui_layer_skinmystylecss{display:none; position: absolute; width:1989px;}
-body .layer-ext-my{border-radius:8px; -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2); box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2); border-color:#bcbcbc;}
-body .layer-ext-my .layui-layer-title{background:#6AA6D6; color:#fff;}
-body .layer-ext-my .layui-layer-btn{border-top:1px solid #e5e5e5; margin:0 20px; padding:10px 0;}
-body .layer-ext-my .layui-layer-btn a{height:34px; line-height:34px; font-size:14px; padding:0 20px;}
-
