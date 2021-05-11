@@ -1,9 +1,6 @@
-useRef 可以用来缓存一个变量，这玩意可太NB了
-建立一个分支，去pr
-\n
-我直接在master上搞一个提交，哎，有分支我不用，就是玩儿
-今天烧的水有点热了，烫嘴
+toPrimitive 对象的原始值转换哦。
 
-readme怎么换行呢
-
-哎呀连续两天可以换行了
+有[Symbol.toPrimitive] 的时候走[Symbol.toPrimitive]
+没有的时候
+hint为 string的时候走toString 或者 valueof
+hint为 number|defualt的时候走valueof 或者 tostring
