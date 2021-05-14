@@ -7,4 +7,4 @@ hint为 number|defualt的时候走valueof 或者 tostring
 
 正则表达式有NFA DFA POSIX NFA三种引擎，JS是用的NFA
 
-又是刷git的一天
+又是刷git的一天，努努力刷他一年
