@@ -10,3 +10,6 @@ hint为 number|defualt的时候走valueof 或者 tostring
 又是刷git的一天，努努力刷他一年
 
 又是刷git的一天，努努力刷他一年
+事件冒泡是微软定义的，
+事件捕获是网景定义的，
+ECMA规范吸纳了两种模式，addEventListener 默认使用冒泡，第三个参数传true就是用捕获，false，也使用冒泡
