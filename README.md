@@ -15,3 +15,6 @@ ECMA规范吸纳了两种模式，addEventListener 默认使用冒泡，第三�
 
 ***
 flutter这个东西，真烦人啊
+
+***
+重构啊
