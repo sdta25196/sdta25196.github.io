@@ -76,3 +76,6 @@ webpack 搞起来
 
 ***
 上班第二天，准备打一个脚手架环境
+
+*** 环境啊
+react  react-dom webpack babel eslint less 等等
