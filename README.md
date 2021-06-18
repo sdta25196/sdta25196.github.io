@@ -79,3 +79,7 @@ webpack 搞起来
 
 *** 环境啊
 react  react-dom webpack babel eslint less 等等
+
+*** 搭建react脚手架
+还挺简单
+
