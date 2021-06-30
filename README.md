@@ -97,3 +97,6 @@ react  react-dom webpack babel eslint less 等等
 
 ***
 架构啊，前端架构啊
+
+***
+history.pushState()
