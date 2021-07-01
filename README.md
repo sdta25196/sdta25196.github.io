@@ -99,4 +99,7 @@ react  react-dom webpack babel eslint less 等等
 架构啊，前端架构啊
 
 ***
-history.pushState()
+history.pushState() 可以实现浏览器切换url,不刷新页面
+
+*** 
+echart搞点东西
