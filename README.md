@@ -96,38 +96,4 @@ react  react-dom webpack babel eslint less 等等
 手里有把锤子，看啥都是钉子
 
 ***
-架构啊，前端架构啊
-
-***
-history.pushState() 可以实现浏览器切换url,不刷新页面
-
-*** 
-echart搞点东西
-
-*** 
-今天搞个MVC看看
-
-*** 
-react源码搞起来
-
-*** 
-敲敲代码，提高编码能力
-
-***
-|1|2|3|
-|--|--|--|
-|重构|重构|重构|
-|第一|第二|第三|
-
-*** 
-react接着看
-
-***
-知易行难
-
-*** 
-coding coding coding !!!! keep coding!!!
-
-*** 
-coding!!!
-coding!!! 7/22
+写个qs吧
