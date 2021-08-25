@@ -102,3 +102,9 @@ react  react-dom webpack babel eslint less 等等
 不知不觉我还是走上了开源的道路
 *** 
 react与vue的差异博客
+width: 100%;
+    height: 50vh;
+    text-align: center;
+    /* padding-top: 200px; */
+    color: red;
+    transform: translate(0, 50vh);
