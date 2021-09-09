@@ -16,3 +16,7 @@ ECMA规范吸纳了两种模式，addEventListener 默认使用冒泡，第三�
 ***
 Accept and embrace all experiences
 接受和拥抱所有经历
+
+***
+trust your intuition
+相信你的直觉
