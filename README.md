@@ -20,3 +20,7 @@ Accept and embrace all experiences
 ***
 trust your intuition
 相信你的直觉
+
+***
+动态规划(dp) 是求解最优化的递推问题
+
