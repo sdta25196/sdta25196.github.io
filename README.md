@@ -38,3 +38,6 @@ Too many of us are not living our dreams because we are living our fears.
 如果你走得足够远，其实就再也没办法回去了。当你回到故乡，原来的一切都已经消失了。
 
 不过，这也不算什么，归根结底，旅程才是你的故事中最重要的部分。
+
+***
+这里马上就变成我的博客了
