@@ -40,4 +40,11 @@ Too many of us are not living our dreams because we are living our fears.
 不过，这也不算什么，归根结底，旅程才是你的故事中最重要的部分。
 
 ***
-这里马上就变成我的博客了
+三种Array判断
+```js
+  let arr = []
+  Array.isArray(arr)  // true
+  Object.prototype.toString.call(arr) === "[object Array]" // true
+  arr.constructor === Array // true
+```
+
