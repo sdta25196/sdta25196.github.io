@@ -41,6 +41,7 @@ Too many of us are not living our dreams because we are living our fears.
 
 ***
 三种Array判断
+
 ```js
   let arr = []
   Array.isArray(arr)  // true
