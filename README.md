@@ -53,6 +53,6 @@ Too many of us are not living our dreams because we are living our fears.
 
 *** 
 博客进度1%1%1%1%1% 我咋还没开始写呢
-
+2%
 ***
 还得搞个富文本编辑器
