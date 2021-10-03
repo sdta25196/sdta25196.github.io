@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/article/index.js"],"names":["Article","props"],"mappings":"+GAQeA,UARf,SAAiBC,GACf,OACE","file":"static/js/5.1cb39f29.chunk.js","sourcesContent":["function Article(props) {\r\n  return (\r\n    <div>\r\n      文章\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Article"],"sourceRoot":""}

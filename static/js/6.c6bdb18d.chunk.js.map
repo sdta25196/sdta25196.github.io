@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/externalStation/index.js"],"names":["ExternalStation","props"],"mappings":"+GAQeA,UARf,SAAyBC,GACvB,OACE","file":"static/js/6.c6bdb18d.chunk.js","sourcesContent":["function ExternalStation(props) {\r\n  return (\r\n    <div>\r\n      这是一个正在建设中的博客-外部站点\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default ExternalStation"],"sourceRoot":""}

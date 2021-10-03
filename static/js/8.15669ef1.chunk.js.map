@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/util/index.js"],"names":["Util","props"],"mappings":"+GAQeA,UARf,SAAcC,GACZ,OACE","file":"static/js/8.15669ef1.chunk.js","sourcesContent":["function Util(props) {\r\n  return (\r\n    <div>\r\n      这是一个正在建设中的博客 - 技能\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Util"],"sourceRoot":""}

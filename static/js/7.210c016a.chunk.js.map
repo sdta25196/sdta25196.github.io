@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/translate/index.js"],"names":["Translate","props"],"mappings":"+GAQeA,UARf,SAAmBC,GACjB,OACE","file":"static/js/7.210c016a.chunk.js","sourcesContent":["function Translate(props) {\r\n  return (\r\n    <div>\r\n      这是一个正在建设中的博客 - 翻译\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Translate"],"sourceRoot":""}
