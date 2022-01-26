@@ -7,7 +7,7 @@ hint为 number|defualt的时候走valueof 或者 tostring
 
 ***
 正则表达式有NFA DFA POSIX NFA三种引擎，JS是用的NFA
-
+正则小心回溯会出现性能问题
 ***
 事件冒泡是微软定义的，
 事件捕获是网景定义的，
